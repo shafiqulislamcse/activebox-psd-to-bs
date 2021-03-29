@@ -1,0 +1,341 @@
+/* general Css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+body{
+	font-family: 'Raleway', sans-serif;
+}
+/* general Css */
+
+/*header css*/
+.header{
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.header .container{
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.active-brand img{
+	width: 100%!important;
+}
+.activenavbar ul li a{
+	font-weight: 700;
+	color:#fff!important;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	padding: 40px 30px!important;
+	position: relative;
+}
+.activenavbar ul li:last-child a{
+	padding-right: 0!important;
+}
+.activenavbar ul li a::after{
+	content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    left: 30px;
+    bottom: 32px;
+    background-color: #e84545!important;
+    transition: 0.3s all;
+}
+.activenavbar ul li:hover a::after{
+	width: 60%;
+}
+/*banner css*/
+.banner{
+	background:url('../img/banner.jpg') no-repeat center;
+	height: 100vh;
+	background-size: cover;
+}
+.banner-content{
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	margin-top: 60px;
+}
+.banner-content h1{
+	font-size: 65px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+.banner-content p{
+	font-size: 22px;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+.banner-content a{
+	color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #e84545;
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 3px;
+    transition: 0.3s all;
+}
+.banner-content a:hover{
+	transform: scale(1.1);
+}
+
+/*services css*/
+.service{
+	padding: 80px 0;
+}
+.single-service{
+	text-align: center;
+	margin-bottom: 40px;
+	transition: 0.3s all;
+	padding:10px;
+	cursor: pointer;
+}
+.single-service .icon i{
+	font-size: 50px;
+	color: #e84545;
+	transition: 0.3s all;
+	margin-bottom: 25px;
+}
+.single-service h3{
+	font-size: 16px;
+	font-weight: 700;
+    color: #2d3033;
+    text-transform: uppercase;
+    margin: 7px 0;
+}
+.single-service p{
+	color: #6c7279;
+}
+.single-service:hover{
+	-webkit-box-shadow: 0px 10px 9px 0px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 10px 9px 0px rgba(0,0,0,0.43);
+	box-shadow: 0px 10px 9px 0px rgba(0,0,0,0.43);
+}
+.single-service:hover i{
+	transform:scale(1.2);
+}
+
+/*gallary css*/
+.gallary .single-img{
+	position: relative;
+}
+.gallary .single-img img{
+	width: 100%;
+	height: auto;
+	margin-top: -4px;
+}
+.gallary-overlay{
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(232,69,69,0.7);
+	margin-top: -4px;
+	transform: scale(0);
+	transition: 0.3s ease;
+}
+.gallary-overlay-content{
+  	position: absolute;
+  	width: 100%;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+.gallary-overlay-content h4{
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+.gallary-overlay-content span{
+	color:#fff;
+}
+.single-img:hover .gallary-overlay{
+	transform: scale(1);
+}
+
+/*our team css*/
+.team{
+	padding: 80px 0;
+}
+.single-team{
+}
+.team-img{
+	overflow: hidden;
+}
+.single-team:last-child{
+	margin-right: 0;
+}
+.single-team img{
+	width: 100%;
+	transition: 0.3s all;
+}
+.single-team:hover img{
+	transform: scale(1.3);
+}
+.single-team .title{
+	margin:20px 0;
+}
+.single-team .title h3{
+	font-size: 22px;
+    font-weight: 400;
+    color: #2d3033;
+}
+.single-team .title span{
+	text-transform: uppercase;
+    color: #e84545;
+}
+.single-team p{
+	color: #6c7279;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+.single-team .social ul{
+	list-style-type: none;
+	margin-left: -33px;
+}
+.single-team .social ul li{
+	display: inline-block;
+}
+.single-team .social ul li a{
+	font-size: 18px;
+    color: #C6CACC;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid;
+    display: inline-block;
+    transition: 0.3s all;
+}
+.single-team .social ul li a:hover{
+	background-color: #E84545;
+	border:1px solid #E84545;
+	color: #fff;
+}
+
+/*testimonial css*/
+.testimonial{
+	background-color: #53354A;
+}
+.testimonial-image img{
+	width: 100%;
+}
+.testimonial-content h2{
+	font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+    padding: 0 69px;
+    margin-top: 60px;
+}
+.testimonial-content span{
+	font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 28px;
+    display: inline-block;
+    margin-left: 75px;
+}
+
+/*call css*/
+.call{
+	padding:80px 0;
+}
+.call-content{
+	text-align: center;
+}
+.call-content h1{
+	font-size: 28px;
+    font-weight: 300;
+    color: #2d3033;
+}
+.call-content p{
+	font-weight: 700;
+	color: #2d3033;
+	text-transform: uppercase;
+	margin-top: 15px;
+    margin-bottom: 30px;
+}
+.call-content a{
+	color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #e84545;
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 3px;
+    transition: 0.3s all;
+}
+.call-content a:hover{
+	transform: scale(1.1);
+}
+
+
+/*contact css*/
+.contact{
+	background-color: #3A3E64;
+	padding:80px 0;
+}
+.contact h2{
+	font-size: 16px;
+	color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.address{
+	text-align: center;
+}
+.address p{
+	color: #9697A7;
+}
+.c-social{
+	text-align: center;
+}
+.c-social ul{
+	list-style-type: none;
+	margin-left: -35px;
+}
+.c-social ul li{
+	display: inline-block;
+}
+.c-social ul li a{
+	font-size: 18px;
+    color: #C6CACC;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid;
+    display: block;
+    transition: 0.3s all;
+}
+.c-social ul li a:hover{
+	background-color: #E84545;
+	border:1px solid #E84545;
+	color: #fff;
+}
+.about{
+	text-align: center;
+}
+.about p{
+	color: #9697A7;
+}
+
+/*footer css*/
+.footer{
+	background-color: #313454;
+	padding:25px 0;
+}
+.footer p{
+	text-align: center;
+	color: #9697A7;
+}
+
+
